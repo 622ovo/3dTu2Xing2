@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3d旋转相册</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="cube">
+        <div class="out_front">
+          <img src="img/q1.jpg" class="pic" />
+        </div>
+        <div class="out_back">
+          <img src="img/q2.png" class="pic" />
+        </div>
+        <div class="out_left">
+          <img src="img/q3.jpg" class="pic" />
+        </div>
+        <div class="out_right">
+          <img src="img/q4.jpg" class="pic" />
+        </div>
+        <div class="out_top">
+          <img src="img/q5.jpg" class="pic" />
+        </div>
+        <div class="out_bottom">
+          <img src="img/q6.jpg" class="pic" />
+        </div>
+      </div>
+    </div>
+    <audio
+	  id="audio"
+      controls="controls"
+	  style="opacity:0" preload="auto" controls loop hidden="true"
+      src="ms/羽肿 - Windy Hill (风之谷).mp3"
+    >
+      <!-- 你的浏览器版本太低，不支持audio标签 -->
+    </audio>
+    <script>
+      var myAuto = document.getElementById("audio");
+      myAuto.play();
+    </script>
+  </body>
+</html>
